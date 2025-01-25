@@ -2,8 +2,8 @@ var canvas = document.querySelector('canvas');
 var contextVar = canvas.getContext('2d');
 
 // Set the canvas dimensions to match the image size
-canvas.width = 1920/4;
-canvas.height = 1080/4;
+canvas.width = 1920/5;
+canvas.height = 1080/5;
 
 var images = [];
 images.length = 31;

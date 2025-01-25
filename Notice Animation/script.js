@@ -78,3 +78,8 @@ canvas.addEventListener('mouseleave', function () {
     i = 30; // Start from the last frame
     playAnimationReverse();
 });
+
+
+canvas.addEventListener('click', function () {
+    document.querySelector('.popup').style.display = 'block';
+});

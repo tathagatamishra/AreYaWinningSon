@@ -20,5 +20,5 @@ setInterval(function() {
     if(i>=31){
         i=1;
     }
-    contextVar.drawImage(images[i], 200, 100, 200, 100)
+    contextVar.drawImage(images[i], 1920/10, 1080/10, 1920/10, 1080/10)
 }, 100);

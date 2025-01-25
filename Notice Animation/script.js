@@ -5,19 +5,20 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var images = [];
-images.length = 10;
+images.length = 31;
 
 for (var i = 1; i < images.length; i++) {
     images[i] = new Image();
-    images[i].src = 'Walk (' + i.toString() + ').png';
+    images[i].src = 'Assets/notice (' + i.toString() + ').png';
 }
+
 
 var i = 1;
 
 setInterval(function() {
-    i++
-    if(i>=10){
+    i++;
+    if(i>=31){
         i=1;
     }
-    contextVar.drawImage(images[i], 100, 100, 100, 100)
+    contextVar.drawImage(images[i], 200, 100, 200, 100)
 }, 100);

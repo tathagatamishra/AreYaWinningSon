@@ -2,8 +2,8 @@ var canvas = document.querySelector('canvas');
 var contextVar = canvas.getContext('2d');
 
 // Set the canvas dimensions to match the image size
-canvas.width = 1920/5;
-canvas.height = 1080/5;
+canvas.width = 1920;
+canvas.height = 1080;
 
 var images = [];
 images.length = 31;
@@ -77,9 +77,4 @@ canvas.addEventListener('mouseleave', function () {
     cancelAnimationFrame(animationFrameId); // Stop any ongoing animation
     i = 30; // Start from the last frame
     playAnimationReverse();
-});
-
-
-canvas.addEventListener('click', function () {
-    document.querySelector('.popup').style.display = 'block';
 });

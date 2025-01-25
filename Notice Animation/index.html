@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprite Animation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="popup">popup</div>
-    <img src="Assets/notice (31).png" alt="Sprite">
-    <canvas></canvas>
+    <div class="popup">
+        <button onclick="document.querySelector('.popup').style.display = 'none';">X</button>
+        <h1>Notice</h1>
+
+        <div class="content">
+            <hr />
+            <p>Hey! I'm a notice. I'm here to tell you something important. So, please pay attention to me.</p>
+            <hr />
+            <p>Hey! I'm a notice. I'm here to tell you something important. So, please pay attention to me.</p>
+            <hr />
+            <p>Hey! I'm a notice. I'm here to tell you something important. So, please pay attention to me.</p>
+            <hr />
+        </div>
+    </div>
+
+    <canvas onclick="document.querySelector('.popup').style.display = 'flex';"></canvas>
 
     <script src="script.js"></script>
 </body>
+
 </html>

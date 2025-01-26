@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.4/tailwind.min.css">
+</head>
+
+<body>
+    <!-- Demo -->
+    <div class="w-screen min-h-screen bg-gray-900 flex items-center justify-center p-4">
+        <div class="grid gap-12 md:grid-cols-3">
+            <div>
+                <p class="text-white mb-8 font-bold text-lg">Turbulence</p>
+                <div class="h-32 w-64 bg-white flex items-center text-center justify-center turbulence"></div>
+            </div>
+            <div>
+                <p class="text-white mb-8 font-bold text-lg">Displacement Map</p>
+                <div class="h-32 w-64 bg-white flex items-center text-center justify-center displacement-map"></div>
+            </div>
+
+            <div>
+                <p class="text-white mb-8 font-bold text-lg">Combined</p>
+                <div class="h-32 w-64 bg-white flex items-center text-center justify-center combined"></div>
+            </div>
+
+            <div>
+                <p class="text-white mb-8 font-bold text-lg">Turbulence (Circle)</p>
+                <div class="h-32 w-32 rounded-full bg-white flex items-center text-center justify-center turbulence">
+                </div>
+            </div>
+            <div>
+                <p class="text-white mb-8 font-bold text-lg">Displacement Map (Circle)</p>
+                <div
+                    class="h-32 w-32 rounded-full bg-white flex items-center text-center justify-center displacement-map">
+                </div>
+            </div>
+
+            <div>
+                <p class="text-white mb-8 font-bold text-lg">Combined (Circle)</p>
+                <div class="h-32 w-32 rounded-full bg-white flex items-center text-center justify-center combined">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SVG filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
+        <defs>
+            <filter id="turbulence">
+                <feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="4" />
+            </filter>
+            <filter id="displacement">
+                <feDisplacementMap in="SourceGraphic" scale="4" />
+            </filter>
+            <filter id="combined">
+                <feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="4" />
+                <feDisplacementMap in="SourceGraphic" scale="4" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+
+</html>

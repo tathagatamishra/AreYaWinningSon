@@ -1,0 +1,30 @@
+body {
+    background: #346;
+    padding: 2em;
+    font-family: sans-serif;
+  }
+  
+  .torn {
+    position: relative;
+    max-width: 70em;
+    margin: 1em auto;
+    padding: 1.5em;
+    font-size: 1.2em;
+  }
+  
+  .torn::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: #fed;
+    border-radius: 20px 4px 30px 8px;
+    filter: url(#wobble);
+    transform: rotate(-1deg);
+    z-index: -1;
+    box-shadow: 5px 5px 5px #0009;
+    background-image: url(https://res.cloudinary.com/dangvxnul/image/upload/v1716225651/paper-dark_fuujeq.jpg);
+    background-size: 100px;
+  }
+  
+  .wobble { filter: url(#wobble); }
+  

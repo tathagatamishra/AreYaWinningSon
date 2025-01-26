@@ -1,0 +1,11 @@
+.turbulence {
+    filter: url(#turbulence);
+}
+
+.displacement-map {
+    filter: url(#displacement);
+}
+
+.combined {
+    filter: url(#combined);
+}

@@ -10,19 +10,15 @@
 
 <body>
 
-    <body>
+    <div id="cloud-circle"></div>
+    <svg width="0" height="0">
+        <filter id="filter">
+            <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
+            <!-- scale controls the size of the noise -->
+            <feDisplacementMap in="SourceGraphic" scale="180" />
+        </filter>
+    </svg>
 
-        <div id="cloud-circle"></div>
-        <svg width="0" height="0">
-            <filter id="filter">
-                <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
-                <feDisplacementMap in="SourceGraphic" scale="180" />
-            </filter>
-        </svg>
-        <!--   <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> -->
-        <!-- <h1>10px</h1> -->
-
-    </body>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <p>Mouse Position</p>
+        <p id="text"></p>
+        <p id="color">Pen Color</p>
+        <!-- input for set the stroke width -->
+        <hr>
+        <p>Second Canvas</p>
+        <input type="range" id="stroke-width" min="1" max="10" value="1">
+        <input type="color" id="color-picker">
+        <button id="clear">Clear</button>
+    </div>
+
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
